@@ -22,7 +22,7 @@ public class TimerObject : MonoBehaviour
 
     //public int theScore;
 
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +43,6 @@ public class TimerObject : MonoBehaviour
         {
             
             SceneManager.LoadScene("GameWin");
-
             /*if(timeLeft <= TimerValue)
             {
                 Debug.Log("Win");
@@ -62,7 +61,6 @@ public class TimerObject : MonoBehaviour
     {
         if(other.gameObject.tag == "Coins")
         {
-            
             scoreValue += 10;
             ScoreText.GetComponent<Text>().text = "Score: " + scoreValue;
             Destroy(other.gameObject);
@@ -76,5 +74,4 @@ public class TimerObject : MonoBehaviour
 
 
     }
-    
 }
