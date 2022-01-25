@@ -42,6 +42,7 @@ public class TimerObject : MonoBehaviour
         if(scoreValue >= 10)
         {
             Debug.Log("Win");
+            SceneManager.LoadScene("GameWin");
             /*if(timeLeft <= TimerValue)
             {
                 Debug.Log("Win");
@@ -51,7 +52,7 @@ public class TimerObject : MonoBehaviour
         else if (timeLeft <= 0)
         {
             Debug.Log("Lose");
-            //SceneManager.LoadScene("");
+            SceneManager.LoadScene("GameLose");
         }
 
     }
@@ -68,7 +69,7 @@ public class TimerObject : MonoBehaviour
         if(other.gameObject.tag == "Water")
         {
             Debug.Log("Lose");
-            //SceneManager.LoadScene("");
+            SceneManager.LoadScene("GameLose");
         }
 
 
